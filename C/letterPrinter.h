@@ -67,3 +67,4 @@ const char* LETTER_DICT[27][5] = {
 
 //Prototypes
 void printHelp (void);
+char translate (char);
