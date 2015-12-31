@@ -3,7 +3,7 @@
 # This program will print the ASCII input in the form of ASCII art, each word on a different line.
 # Stand alone argument based version. 
 
-#region Dependecies
+#region Dependencies
 import sys
 #endregion Dependencies
 
@@ -47,9 +47,9 @@ def printHelp (vMajor, vMinor, vSmall):
     print "Letter Printer - V%d.%d.%d\n" % (vMajor, vMinor, vSmall)
     print "\nUsage: [-h] letterPrinter.py WORD WORD ... WORD"
     print "Required Arguments:"
-    print "Each WORD is an ASCII string, seperated by a space."
+    print "Each WORD is an ASCII string, separated by a space."
     print "Program requires at least one word of one a minimum one ASCII character in length."
-    print "Example: letterPrinter \"Hello World!\""
+    print "Example: letterPrinter.py \"Hello World!\""
     print "Optional Arguments:"
     print "-h, --help      Show this help message."
 
@@ -65,7 +65,7 @@ def getLetter (c):
 if __name__ == "__main__":
     
     try:
-        # Check if arguemnts are too few (only letterPrinter.py or nonsense text input)
+        # Check if arguments are too few (only letterPrinter.py or nonsense text input)
         if argc <= 1:
             printHelp (VERSION_MAJOR, VERSION_MINOR, VERSION_SMALL)
 
@@ -88,7 +88,7 @@ if __name__ == "__main__":
                 outputBuffer[3] += letterInfo[3]
                 outputBuffer[4] += letterInfo[4]
         
-            # Ouput current input argument as art
+            # Output current input argument as art
             print "%s\n%s\n%s\n%s\n%s\n\n" % (outputBuffer[0], outputBuffer[1], outputBuffer[2], outputBuffer[3], outputBuffer[4])
     
     # Catch running program with no input
