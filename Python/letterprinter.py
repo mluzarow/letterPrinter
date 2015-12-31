@@ -43,8 +43,8 @@ LETTER_DICT ["!"] = ["!! ", "!! ", "!! ", "   ", "!! "]
 #endregion Defines
 
 # Print help text
-def printHelp (vMajor, vMinor, vSmall):
-    print "Letter Printer - V%d.%d.%d\n" % (vMajor, vMinor, vSmall)
+def printHelp ():
+    print "Letter Printer - V%d.%d.%d\n" % (VERSION_MAJOR, VERSION_MINOR, VERSION_SMALL)
     print "\nUsage: [-h] letterPrinter.py WORD WORD ... WORD"
     print "Required Arguments:"
     print "Each WORD is an ASCII string, separated by a space."
@@ -67,12 +67,12 @@ if __name__ == "__main__":
     try:
         # Check if arguments are too few (only letterPrinter.py or nonsense text input)
         if argc <= 1:
-            printHelp (VERSION_MAJOR, VERSION_MINOR, VERSION_SMALL)
+            printHelp ()
 
         # check for the [--help] | [-h] arguments
         for arg in argv:
             if arg == "-h" or arg == "--help":
-                prinntHelp (VERSION_MAJOR, VERSION_MINOR, VERSION_SMALL)
+                prinntHelp ()
     
         # Read through all input strings in argv
         for i in range (1, argc):
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     
     # Catch running program with no input
     except:
-        printHelp (VERSION_MAJOR, VERSION_MINOR, VERSION_SMALL)
+        printHelp ()
 #endregion Main
 
   

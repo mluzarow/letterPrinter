@@ -1,7 +1,7 @@
 # letterPrinter
 Console application.  Prints whatever strings are input as arguments, printing each letter as a multi-line construct of the source letter. Each word goes on a new line.
 
-EX: letterPrinter.c Hello World!
+EX: letterPrinter Hello World!
 
 <pre>
 HH  HH  EEEEEE  LL     LL      OOOO
