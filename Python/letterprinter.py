@@ -63,6 +63,8 @@ def getLetter (c):
 #region Main
 # Main entry
 if __name__ == "__main__":
+    argc = len (sys.argv)   # argc
+    argv = sys.argv         # argv
     
     try:
         # Check if arguments are too few (only letterPrinter.py or nonsense text input)
